@@ -16,6 +16,6 @@ To use Livereload, run 'gulp watch' then click the Chrome Extension button for L
 
 'gulp' runs gulp to build for dev
 
-'gulp build' builds for production
+'gulp build' builds for production (standard tasks + uglify)
 
 'gulp watch' auto compile Sass and Javascript files on save with livereload.
