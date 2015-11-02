@@ -3,7 +3,6 @@
 Based from the Underscores theme, but modified to use Bourbon, Neat and Bitters along with Gulp for Sass preprocessing, autoprefixer, concatenation and livereload.
 
 ##Getting Started
----------------
 
 1. Set up your wp-config.php file to point to your database with the correct credentials.
 2. Install Dependencies by running 'npm install' from the terminal cd'ed to the theme directory.
@@ -16,5 +15,7 @@ To use Livereload, run 'gulp watch' then click the Chrome Extension button for L
 ##Gulp Commands
 
 'gulp' runs gulp to build for dev
+
 'gulp build' builds for production
+
 'gulp watch' auto compile Sass and Javascript files on save with livereload.
