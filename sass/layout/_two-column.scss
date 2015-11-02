@@ -1,0 +1,102 @@
+/*  Two Columns 50-50  */
+.two-column-5050, .fifty-fifty {
+  .sub-section0 {
+    @include one-half-nom;
+    @include media($small-screen) {
+      @include omega;
+    }
+    
+    &.boxed {
+      display:table;
+    }
+  }
+  .sub-section1 {
+    @include one-half-nom;
+    
+    &.boxed {
+      display:table;
+    }
+  }
+}
+
+/*  Two Columns 33-67  */
+.onethird-twothirds {
+  .sub-section0 {
+    @include one-third-nom;
+    @include media($small-screen) {
+      @include omega;
+    }
+    &.boxed {
+      display:table;
+    }
+  }
+  .sub-section1 {
+    @include two-thirds-nom;
+    @include media($small-screen){
+      @include omega;
+    }
+  }
+}
+
+/*  Two Columns 67-33  */
+.two-column-6733, .twothirds-onethird  {
+  .sub-section0 {
+    @include two-thirds-nom;
+    @include media($small-screen) {
+      @include omega;
+    }
+    &.boxed {
+      display:table;
+    }
+  }
+  .sub-section1 {
+    @include one-third-nom;
+    
+    &.boxed {
+      display:table;
+    }
+  }
+}
+
+.onequarter-threequarters {
+  .sub-section0 {
+    @include one-quarter-nom;
+    @include media($small-screen) {
+      @include omega;
+    }
+    &.boxed {
+      display:table;
+    }
+  }
+  .sub-section1 {
+    @include three-quarters-nom;
+    @include media($small-screen) {
+      @include omega;
+    }
+    &.boxed {
+      display:table;
+    }
+  }
+}
+
+
+/*  Two Columns 75-25  */
+.two-column-7525, .threequarters-onequarter {
+  .sub-section0 {
+    @include three-quarters-nom;
+    @include media($small-screen) {
+      @include omega;
+    }
+    
+    &.boxed {
+      display:table;
+    }
+  }
+  .sub-section1 {
+    @include one-quarter-nom;
+    
+    &.boxed {
+      display:table;
+    }
+  }
+}

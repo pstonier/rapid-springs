@@ -1,0 +1,64 @@
+#primary a.btn {
+  padding: .5em 1em;
+  
+  &:hover {
+    @media screen and (min-width:$nav-breakpoint-value) {
+      text-decoration: none;
+    }
+  }
+}
+html #{$all-buttons}, a.btn {
+  appearance: none;
+  background-color: $action-color;
+  border: 0;
+  border-radius: $base-border-radius;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 600;
+  line-height: 1;
+  padding: $small-spacing $base-spacing;
+  text-decoration: none;
+  transition: background-color $base-duration $base-timing;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  pointer-events:all;
+  
+  &:visited {
+    color: $white;
+  }
+  
+  &:hover,
+  &:focus {
+    @media screen and (min-width:$nav-breakpoint-value) {
+      background-color: shade($action-color, 20%);
+      color: $action-color;
+      text-decoration: none;
+    }
+  }
+
+  &:disabled, &.disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+
+    &:hover {
+      @media screen and (min-width:$nav-breakpoint-value) {
+        background-color: $action-color;
+      }
+    }
+  }
+  &.alt {
+    background-color: lighten($action-color,50);
+    
+    &:hover,
+    &:focus {
+      @media screen and (min-width:$nav-breakpoint-value) {
+        background-color: lighten($action-color,30);
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+/*  Three Columns 33-33-33  */
+.three-column-33-33-33, .onethird-onethird-onethird  {
+  .sub-section0 {
+    @include one-third-nom;
+  }
+  .sub-section1 {
+    @include one-third-nom;
+  }
+  .sub-section2 {
+    @include one-third-nom;
+  }
+}
+
+/*  Three Columns 25-50-25  */
+.three-column-25-50-25, .twentyfive-fifty-twentyfive {
+  .sub-section0 {
+    @include one-quarter-nom;
+  }
+  .sub-section1 {
+    @include one-half-nom;
+  }
+  .sub-section2 {
+    @include one-quarter-nom;
+  }
+}

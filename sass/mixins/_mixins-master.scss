@@ -1,0 +1,220 @@
+// Rem output with px fallback
+@mixin font-size($sizeValue: 1.6) {
+	font-size: ($sizeValue * 10) + px;
+	font-size: $sizeValue + rem;
+}
+
+// Center block
+@mixin center-block {
+	display: block;
+	margin: 0 auto;
+}
+
+// Clearfix
+@mixin clearfix() {
+	content: "";
+	display: table;
+}
+
+// Clear after (not all clearfix need this also)
+@mixin clearfix-after() {
+	clear: both;
+}
+
+//transparent colors
+@mixin transparent-background($color, $opacity: 1) {
+    background: $color; /* The Fallback */
+    background: rgba($color, $opacity);
+}
+
+
+@mixin one-column {
+	margin-bottom:1em;
+	
+	@include media($small-screen) {
+		@include span-columns(2);
+		@include omega(1n);
+	}
+	@include media($medium-screen) {
+		@include span-columns(1);
+		@include omega(4n);
+	}
+	@include media($large-screen) {
+		@include span-columns(1.333);
+		@include omega(6n);
+	}
+	@include media($xl-screen) {
+		@include span-columns(1);
+		@include omega(12n);
+	}
+}
+
+@mixin full-width {
+	margin-bottom:1em;
+	
+	@include media($small-screen) {
+		@include span-columns(2);
+		@include omega;
+	}
+	@include media($medium-screen) {
+		@include span-columns(4);
+		@include omega;
+	}
+	@include media($large-screen) {
+		@include span-columns(8);
+		@include omega;
+	}
+	@include media($xl-screen) {
+		@include span-columns(12);
+		@include omega;
+	}
+}
+
+@mixin one-quarter {
+	margin-bottom:1em;
+	
+	@include media($small-screen) {
+		@include span-columns(2);
+		@include omega(1n);
+	}
+	@include media($medium-screen) {
+		@include span-columns(2);
+		@include omega(2n);
+	}
+	@include media($large-screen) {
+		@include span-columns(2);
+		@include omega(4n);
+	}
+	@include media($xl-screen) {
+		@include span-columns(3);
+		@include omega(4n);
+	}
+}
+
+
+@mixin one-quarter-nom {
+	margin-bottom:1em;
+	
+	@include media($small-screen) {
+		@include span-columns(2);
+	}
+	@include media($medium-screen) {
+		@include span-columns(2);
+	}
+	@include media($large-screen) {
+		@include span-columns(2);
+	}
+	@include media($xl-screen) {
+		@include span-columns(3);
+	}
+}
+
+
+@mixin three-quarters-nom {
+	margin-bottom:1em;
+	
+	@include media($small-screen) {
+		@include span-columns(2);
+	}
+	@include media($medium-screen) {
+		@include span-columns(2);
+	}
+	@include media($large-screen) {
+		@include span-columns(6);
+	}
+	@include media($xl-screen) {
+		@include span-columns(9);
+	}
+}
+
+@mixin one-third {
+	margin-bottom:1em;
+	
+	@include media($small-screen) {
+		@include span-columns(2);
+		@include omega(1n);
+	}
+	@include media($medium-screen) {
+		@include span-columns(4);
+		@include omega(1n);
+	}
+	@include media($large-screen) {
+		@include span-columns(2.66);
+		@include omega(3n);
+	}
+	@include media($xl-screen) {
+		@include span-columns(4);
+		@include omega(3n);
+	}
+}
+
+@mixin one-third-nom {
+	margin-bottom:1em;
+	
+	@include media($small-screen) {
+		@include span-columns(2);
+	}
+	@include media($medium-screen) {
+		@include span-columns(4);
+	}
+	@include media($large-screen) {
+		@include span-columns(2.66);
+	}
+	@include media($xl-screen) {
+		@include span-columns(4);
+	}
+}
+
+@mixin two-thirds-nom {
+	margin-bottom:1em;
+	
+	@include media($small-screen) {
+		@include span-columns(2);
+	}
+	@include media($medium-screen) {
+		@include span-columns(4);
+	}
+	@include media($large-screen) {
+		@include span-columns(5.33);
+	}
+	@include media($xl-screen) {
+		@include span-columns(8);
+	}
+}
+
+@mixin one-half {
+	margin-bottom:1em;
+	
+	@include media($small-screen) {
+		@include span-columns(2);
+		@include omega(1n);
+	}
+	@include media($medium-screen) {
+		@include span-columns(4);
+		@include omega(1n);
+	}
+	@include media($large-screen) {
+		@include span-columns(4);
+		@include omega(2n);
+	}
+	@include media($xl-screen) {
+		@include span-columns(6);
+		@include omega(2n);
+	}
+}
+@mixin one-half-nom {
+	margin-bottom:1em;
+	
+	@include media($small-screen) {
+		@include span-columns(2);
+	}
+	@include media($medium-screen) {
+		@include span-columns(4);
+	}
+	@include media($large-screen) {
+		@include span-columns(4);
+	}
+	@include media($xl-screen) {
+		@include span-columns(6);
+	}
+}

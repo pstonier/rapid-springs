@@ -1,0 +1,20 @@
+// @import "../layout/content-sidebar";
+// @import "../layout/sidebar-content";
+@import "layout/one-column";
+@import "layout/two-column";
+@import "layout/three-column";
+
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+@import "primary/posts-and-pages";
+
+/*--------------------------------------------------------------
+## Asides
+--------------------------------------------------------------*/
+@import "primary/asides";
+
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+@import "primary/comments";
