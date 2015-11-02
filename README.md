@@ -1,8 +1,8 @@
-Rapid Springs WordPress Starter Theme
+#Rapid Springs WordPress Starter Theme
 
 Based from the Underscores theme, but modified to use Bourbon, Neat and Bitters along with Gulp for Sass preprocessing, autoprefixer, concatenation and livereload.
 
-Getting Started
+##Getting Started
 ---------------
 
 1. Set up your wp-config.php file to point to your database with the correct credentials.
@@ -13,7 +13,7 @@ Getting Started
 To use Livereload, run 'gulp watch' then click the Chrome Extension button for Livereload. Any changes to your files will instantly show up in your browser on save.
 
 
-#Gulp Commands
+##Gulp Commands
 
 'gulp' runs gulp to build for dev
 'gulp build' builds for production
