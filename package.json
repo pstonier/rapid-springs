@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://pstonier@bitbucket.org/rapidsprings/rapid-springs-site.git"
+    "url": "git+https://github.com/pstonier/rapid-springs.git"
   },
   "keywords": [
     "wordpress",
@@ -16,7 +16,7 @@
   ],
   "author": "Rapid Springs Interactive",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/rapidsprings/rapid-springs-site#readme",
+  "homepage": "https://github.com/pstonier/rapid-springs.git",
   "devDependencies": {
     "bourbon": "^4.2.5",
     "bourbon-neat": "^1.7.2",
